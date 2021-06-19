@@ -95,4 +95,11 @@ function ActivateNetworkFirst() {
     });
 }
 
+async function ClearAllCache(){
+    const all_cache_names= await caches.keys();
+    all_cache_names.forEach(cache_name => {
+        caches.delete(cache_name)
+    });
+}
+
 ActivateNetworkFirst()
