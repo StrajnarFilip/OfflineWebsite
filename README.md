@@ -12,4 +12,5 @@ Simply copy paste the function(s) you wish to use and call it.
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/sw.js")
     console.log("Service Worker allowed");
-}```
+}
+```
